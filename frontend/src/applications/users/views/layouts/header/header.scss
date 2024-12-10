@@ -1,0 +1,37 @@
+@use "../../../../../styles/settings/typography" as *;
+@use "../../../../../styles/settings/colors" as *;
+@use "../../../../../styles/generics/mixins" as *;
+
+header {
+  background-color: $color-primary;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+  }
+
+  h1 {
+    font-weight: $font-semibold;
+    color: $color-white;
+    padding-right: 10px;
+    text-align: center;
+    @include center;
+    font-size: 15px;
+    height: 47px;
+    width: auto;
+    margin: 0;
+  }
+
+  .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    height: 0;
+    width: 0;
+  }
+}

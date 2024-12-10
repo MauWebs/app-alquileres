@@ -1,0 +1,100 @@
+.rbc-calendar {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+.rbc-toolbar button {
+  background: white;
+  color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.rbc-toolbar button:hover {
+  background: #007BFF;
+  color: white;
+}
+
+.rbc-day-bg {
+  background-color: #fff;
+}
+
+.rbc-day-bg:hover {
+  background-color: #e9ecef;
+}
+
+.rbc-selected {
+  background-color: #007BFF !important;
+  color: white;
+}
+
+.rbc-event {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.rbc-today {
+  background-color: #000;
+  opacity: 30%;
+}
+
+.rbc-month-view {
+  overflow-y: auto;
+}
+
+.rbc-month-view::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rbc-month-view::-webkit-scrollbar-thumb {
+  background-color: #007BFF;
+  border-radius: 4px;
+}
+
+.selected-day {
+  position: relative;
+  background-color: #007BFF !important;
+  color: white;
+  border-radius: 4px;
+}
+
+.selected-day::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #007BFF;
+}
+
+.selected-day {
+  background-color: #007BFF !important;
+  color: white;
+}
+
+.check-in-day {
+  background-color: #007BFF !important;
+  opacity: 50%;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,8 @@
+/* -------- Generics -------- */
+@use "generics/normalize" as *;
+@use "generics/base" as *;
+@use "generics/mixins" as *;
+
+/* -------- Settings -------- */
+@use "settings/colors" as *;
+@use "settings/typography" as *;

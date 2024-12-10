@@ -1,0 +1,68 @@
+@use "../../../../../styles/settings/typography" as *;
+@use "../../../../../styles/settings/colors" as *;
+@use "../../../../../styles/generics/mixins" as *;
+
+nav {
+  background-color: #fff;
+  border: 1px solid #e4e7ec;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  z-index: 1000;
+  top: 0; 
+
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  a {
+    font-size: 16px;
+    color: $color-grey;
+    text-decoration: none;
+    font-weight: $font-semibold;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+
+    li {
+      display: inline;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        transition: filter 0.3s ease;
+        filter: brightness(0) saturate(100%) invert(41%) sepia(6%) saturate(1129%) hue-rotate(173deg) brightness(91%)
+          contrast(89%);
+      }
+
+      &:hover {
+        color: $color-primary;
+
+        .icon {
+          filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(600%) hue-rotate(200deg) brightness(95%)
+            contrast(110%);
+        }
+      }
+    }
+  }
+}

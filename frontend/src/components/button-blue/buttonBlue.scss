@@ -1,0 +1,16 @@
+@use "../../styles/settings/typography" as *;
+@use "../../styles/settings/colors" as *;
+
+.button-blue {
+  background-color: $color-primary;
+  font-weight: $font-semibold;
+  color: $color-white;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}

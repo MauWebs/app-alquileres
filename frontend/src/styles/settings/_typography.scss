@@ -1,0 +1,55 @@
+@use "colors" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$font-inert: "Inter";
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+body {
+  font-family: $font-inert;
+  font-optical-sizing: auto;
+  font-weight: $font-medium;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-bold;
+  font-size: 58px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: $font-medium;
+}
+
+a {
+  font-size: 18px;
+  font-weight: $font-bold;
+  color: $color-black;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+blockquote {
+  margin: 0;
+  padding: 0rem;
+}
+
+ul,
+ol {
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+}
+
+li {
+  margin-bottom: 0rem;
+  font-weight: $font-medium;
+}
